@@ -1,0 +1,295 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+header > nav{
+    margin:  0 auto;
+    /* height: 30px; */
+    display: block;
+    background-color: black;
+}
+
+header > nav .sub-head{
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+header > nav > .sub-head > .left{
+    display: inline-flex;
+    font-size: 11px;
+    line-height: 30px;
+}
+
+header > nav > .sub-head > .left > .divider{
+    width: 2px;
+    background-color: white;
+    height: 14px;
+    margin: 8px 15px;
+}
+
+header > nav .sub-head .left i{
+    margin-right: 10px;
+}
+
+header > nav .sub-head ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-flex;
+    float: right;
+
+}
+
+header > nav .sub-head ul li{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: auto;
+    transition: border  0.1s step-end;
+
+}
+
+header > nav .sub-head ul li a{
+    text-decoration: none;
+    height: 30px;
+    font-size: 10px;
+    padding: 0 10px;
+    line-height: 31px;
+    display: block;
+    color: inherit;
+    
+}
+
+header > .main{
+    /* height: 200px; */
+    color: black;
+    /* height: 150px; */
+    
+}
+
+.container-fluid{
+    max-width: 1200px;
+}
+
+.logo{
+    height: 100px;
+    margin: -50px 0;
+    /* -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite; */
+    display: none
+}
+
+section{
+    width: 100%;
+    /* max-width: 1000px; */
+    margin: 0 auto;
+}
+
+div.item{
+    width: 500px;
+}
+
+div.item img{
+
+    max-width: 500px;
+    
+}
+
+div.item > .name{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: Lobster;
+}
+
+div.item > .detail{
+    text-align: justify;
+    font-size: 20px;
+    text-indent: 50px;
+    /* font-family: play-regular; */
+    
+}
+
+
+div.banner{
+    background-image: url(../images/banner.jpg);
+    width: 100%;
+    height: 750px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    background-attachment: fixed;
+}
+
+div.banner .details{
+    margin: 0 auto;
+    max-width: 1200px;
+    font-weight: bold;
+    
+}
+
+div.banner  .header{
+    line-height: 50px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 0 25px;
+    display: inline-block;
+    position: relative;
+}
+
+div.banner  .header::before{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 3px;
+    background-color: white;
+    left: 0;
+    top: 16px;
+}
+
+div.banner  .header::after{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 3px;
+    background-color: white;
+    right: 0;
+    top: 16px;
+}
+
+div.banner  .title{
+    font-size: 50px;
+    text-shadow: 0px 2px rgba(0, 0, 0, 0.5);
+    line-height: 80px;
+    font-family: JS-regular;
+    font-weight: bold;
+    letter-spacing: 9px;
+}
+
+div.banner  .model{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 1px;
+}
+
+div.banner  .price{
+    font-weight: 500;
+    /* font-size: 20px; */
+    line-height: 30px;
+    background-color: #1e2b33;
+    text-align: center;
+    width: 150px;
+    display: block;
+    padding: 0 5px;
+    font-family: play-regular;
+    letter-spacing: 1px;
+
+}
+
+
+div.banner  .view{
+    font-weight: bold;
+    color: #1e2b33;
+    line-height: 30px;
+    background-color: white;
+    text-align: center;
+    width: 180px;
+    font-size: 16px;
+    display: block;
+    padding: 3px 5px;
+    font-family: play-regular;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 50px;
+    margin-top: 20px;
+}
+
+div.banner  .view span{
+    position: absolute;
+    right: 7px;
+    font-size: 26px;
+    color: white;
+    z-index: 2;
+    font-weight: 100;
+}
+
+div.banner  .view::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    background-color: #1e2b33;
+    width: 20px;
+    right: 0;
+}
+
+div.banner  .view::before{
+    content: "";
+    position: absolute;
+    height: 0;
+    /* background-color: #1e2b33; */
+    width: 0;
+    top: 0;
+    right:  20px;
+    border-left: 18px solid transparent;
+    border-right: 18px solid #1e2b33;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid #1e2b33;
+}
+
+
+
+section.badges .container{ 
+    border-top: 10px solid #1f2b36;
+    width: 100%;
+    background-color: white;
+    color: black;
+    position: relative;
+    height: 300px;
+    margin-top: -150px;
+    padding-top: 50px;
+    box-shadow: 2px 2px rgba(136, 136, 136, 0.2);
+    box-sizing: border-box;
+}
+
+section.badges .container hr{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,hsla(0,0%,0%,0)), color-stop(50%,hsla(0,0%,0%,.30)), color-stop(100%,hsla(0,0%,0%,0)));
+    background: -webkit-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.30) 50%, hsla(0,0%,0%,0) 100%);
+    background:    -moz-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.30) 50%, hsla(0,0%,0%,0) 100%);
+    background:     -ms-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.30) 50%, hsla(0,0%,0%,0) 100%);
+    background:      -o-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.30) 50%, hsla(0,0%,0%,0) 100%);
+    background:         linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.30) 50%, hsla(0,0%,0%,0) 100%);
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
