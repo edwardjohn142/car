@@ -126,8 +126,38 @@ div.item > .detail{
 }
 
 
-div.banner{
+#carouselExampleSlidesOnly{
+    position:absolute;
+    height: 750px;
+    width: 100%;
+}
+
+
+#carouselExampleSlidesOnly .carousel-item{
+    height: 750px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    background-repeat: no-repeat;
+}
+
+#carouselExampleSlidesOnly .carousel-item:first-child{
     background-image: url(../images/banner.jpg);
+}
+#carouselExampleSlidesOnly .carousel-item:nth-child(2){
+    background-image: url(../images/2.jpg);
+}
+
+#carouselExampleSlidesOnly .carousel-item:nth-child(3){
+    background-image: url(../images/3.jpg);
+}
+
+
+
+
+div.banner{
+    /* background-image: url(../images/banner.jpg); */
     width: 100%;
     height: 750px;
     background-position: center;
